@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=K2D&family=Prompt&display=swap');
+$body-font-family: 'K2D';
+$title-font: 'Prompt';
+
+.v-application {
+  [class*='text-'] {
+    color: #36405a;
+    font-family: $body-font-family, sans-serif !important;
+  }
+  font-family: $body-font-family, sans-serif !important;
+}
+
+#app {
+  font-family: $body-font-family, sans-serif !important;
+}
+
+* {
+  font-family: $body-font-family, sans-serif !important;
+}
+
+::v-deep * {
+  font-family: $body-font-family, sans-serif !important;
+}
+
+.v-application {
+  font-family: $body-font-family, sans-serif !important;
+  .title {
+    // To pin point specific classes of some components
+    font-family: $title-font, sans-serif !important;
+  }
+}
+
+.v-data-table>.v-data-table__wrapper>table>thead>tr>th,
+.v-data-table>.v-data-table__wrapper>table>tbody>tr>td {
+  font-size: 13px !important;
+}
+
+@import '~vuetify/src/styles/styles.sass';
